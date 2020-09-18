@@ -1,7 +1,7 @@
 from flask import Flask,request ,render_template
 from model import predict_species
 
-app=Flask(__name__)
+app=Flask(__name__,template_folder='templates')
 
 @app.route('/')
 def homepage():

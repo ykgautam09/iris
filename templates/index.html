@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict flower</title>
+</head>
+<body>
+    <h1>Predict Flower from IRIS Dataset</h1>
+    <div>
+        <form action="/" method="post">
+            <input name="sepel_l" type="text" placeholder="enter sepel_l" required>
+            <input name="sepel_w" type="text" placeholder="enter sepel_w" required>
+            <input name="petal_l" type="text" placeholder="enter petal_l" required>
+            <input name="petal_w" type="text" placeholder="enter petal_w" required>
+            <button type="submit">Get Flower Name</button>
+            </form>        
+    </div>
+    <div>
+        {{ flower }}
+    </div>
+</body>
+</html>
